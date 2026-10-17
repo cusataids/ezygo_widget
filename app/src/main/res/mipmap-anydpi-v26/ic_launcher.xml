@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Built from ezygo.png at the project root. The source is black line art on an
+    opaque white background, so the white becomes this icon's background layer and
+    the art is carried as a transparent foreground - a white foreground square
+    would show up as a cropped rectangle under the launcher's mask.
+
+    The art is sized to fit inside the safe-zone circle, which is the tightest
+    mask a launcher applies, so it is never clipped on any shape.
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_launcher_background" />
+    <foreground android:drawable="@mipmap/ic_launcher_foreground" />
+    <!-- The art is a single flat colour already, so it doubles as the themed
+         icon: the system tints its alpha and ignores the black. -->
+    <monochrome android:drawable="@mipmap/ic_launcher_foreground" />
+</adaptive-icon>

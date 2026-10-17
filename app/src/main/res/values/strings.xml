@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ezygo Widget</string>
+    <string name="disclaimer_short">This app is not affiliated with EzyGo. It uses EzyGo\'s APIs to fetch your data, and you use it at your own risk.</string>
+    <string name="disclaimer_full">This app is not affiliated with, endorsed by, or connected to EzyGo in any way. It only uses EzyGo\'s APIs to fetch your data from EzyGo\'s servers. You access and use your data through this app at your own risk.</string>
+    <string name="disclaimer_samarth">This app is not affiliated with Samarth. It signs in on your behalf to fetch your own records, and you use it at your own risk.</string>
+    <string name="widget_picker_title">Choose a widget</string>
+    <string name="widget_compact_label">Ezygo compact</string>
+    <string name="widget_large_label">Ezygo large</string>
+    <string name="widget_compact_description">A small strip: your average attendance and how many subjects are short.</string>
+    <string name="widget_large_description">A fuller view: your attendance subject by subject, or what is coming up.</string>
+</resources>

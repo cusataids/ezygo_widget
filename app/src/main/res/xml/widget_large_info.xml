@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The large family: the types that need room for a list. Declared at 3x2 so it
+    lands showing every subject, and resizable down to 3x1 and up to 5x4, which are
+    the footprints the layouts are written for.
+
+    See widget_compact_info.xml for why configure and updatePeriodMillis are set
+    the way they are.
+-->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="com.ezygo.attendance.widget.LargeWidgetConfigActivity"
+    android:description="@string/widget_large_description"
+    android:initialLayout="@layout/widget_placeholder"
+    android:minWidth="180dp"
+    android:minHeight="40dp"
+    android:minResizeWidth="180dp"
+    android:minResizeHeight="40dp"
+    android:maxResizeWidth="500dp"
+    android:maxResizeHeight="400dp"
+    android:previewImage="@mipmap/ic_launcher"
+    android:resizeMode="horizontal|vertical"
+    android:targetCellWidth="3"
+    android:targetCellHeight="2"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen" />

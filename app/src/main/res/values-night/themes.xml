@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The dark counterpart of values/themes.xml.
+
+    Without it the activity window stayed on the light platform theme's white
+    background in dark mode. Nothing was visibly wrong wherever a Scaffold painted
+    over it, but the loading state did not, so signing in showed a white screen with
+    grey blocks on it. This fixes the window; RootScreen paints the loading state so
+    it no longer depends on the window at all.
+-->
+<resources>
+    <style name="Theme.EzygoAttendance" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

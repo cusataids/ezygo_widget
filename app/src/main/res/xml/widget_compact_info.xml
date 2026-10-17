@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The compact family: a strip carrying the one figure you check between classes.
+
+    targetCellWidth/Height are what the launcher uses to place the widget on drop,
+    so they are set to the size these types are designed for rather than to the
+    largest size they tolerate. minResize* are the true minimum the content stays
+    readable at: two cells by one. A single cell is not offered - the percentage
+    fits it, but nothing that qualifies the percentage does, and a figure with no
+    qualification is the one thing this widget should not be.
+
+    android:configure asks which of the compact widgets to add before the widget
+    is placed at all.
+
+    updatePeriodMillis is 0 on purpose: the widget is pushed a new snapshot when
+    the app refreshes and by its own refresh button, so it never wakes the device
+    to poll.
+-->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="com.ezygo.attendance.widget.CompactWidgetConfigActivity"
+    android:description="@string/widget_compact_description"
+    android:initialLayout="@layout/widget_placeholder"
+    android:minWidth="110dp"
+    android:minHeight="40dp"
+    android:minResizeWidth="110dp"
+    android:minResizeHeight="40dp"
+    android:maxResizeWidth="400dp"
+    android:maxResizeHeight="110dp"
+    android:previewImage="@mipmap/ic_launcher"
+    android:resizeMode="horizontal|vertical"
+    android:targetCellWidth="3"
+    android:targetCellHeight="1"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen" />

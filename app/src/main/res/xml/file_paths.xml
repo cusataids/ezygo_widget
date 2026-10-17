@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The one directory the app ever hands out to another app: the downloaded grade
+    cards, opened read-only in whatever PDF viewer the user already has. Nothing
+    else in filesDir is exposed, and the token and credential stores are not here.
+-->
+<paths>
+    <files-path name="grade_cards" path="samarth/grade_cards/" />
+</paths>

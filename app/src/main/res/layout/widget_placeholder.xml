@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The widget's initialLayout: what the launcher draws in the instant between the
+    widget being placed and Glance delivering its first composition.
+
+    Deliberately static. The previous build pointed this at Glance's default
+    loading layout, which is a spinner, so any failure to deliver content left a
+    widget spinning forever with no way out. A plain card is honest at that moment
+    and cannot become a permanent state.
+-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:gravity="center"
+    android:padding="8dp"
+    android:maxLines="2"
+    android:ellipsize="end"
+    android:text="@string/app_name"
+    android:textColor="?android:attr/textColorSecondary"
+    android:textSize="12sp" />
